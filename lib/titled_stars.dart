@@ -25,8 +25,13 @@ class TitledStars extends StatelessWidget {
           ),
           textAlign: TextAlign.left,
         ),
-        StarsCounter(
-          starCount: starCount,
+        Container(
+          margin: EdgeInsets.only(
+              left: 20.0,
+          ),
+          child: StarsCounter(
+            starCount: starCount,
+          ),
         )
       ],
     );
