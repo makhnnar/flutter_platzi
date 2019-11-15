@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'like_star.dart';
+import 'package:flutter_app/likes/like_star.dart';
 
 class StarsCounter extends StatelessWidget {
 

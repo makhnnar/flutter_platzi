@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'titled_stars.dart';
+import 'package:flutter_app/descriptionPlace/titled_stars.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -39,6 +39,7 @@ class DescriptionPlace extends StatelessWidget {
             child: Text(
                 description,
                 style: TextStyle(
+                  fontFamily: "Lato",
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF56575a)

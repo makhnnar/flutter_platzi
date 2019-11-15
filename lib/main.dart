@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'PressedButton.dart';
 
-import 'description_place.dart';
+import 'package:flutter_app/descriptionPlace/description_place.dart';
+
+import 'reviewItem/review.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,6 +39,9 @@ class MyApp extends StatelessWidget {
                       stars: 2,
                       description: dummyText,
                     ),
+                    Review(
+                      imgAvatar: "assets/img/ari.jpg",
+                    )
                   ]
               )
           ),
