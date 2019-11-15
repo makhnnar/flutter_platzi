@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_app/descriptionPlace/titled_stars.dart';
+import 'package:flutter_app/likes/titled_stars.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -28,6 +28,8 @@ class DescriptionPlace extends StatelessWidget {
             child: TitledStars(
               title: namePlace,
               starCount: stars,
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
             ),
           ),
           Container(

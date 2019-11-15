@@ -7,11 +7,15 @@ class TitledStars extends StatelessWidget {
   TitledStars({
     Key key,
     this.title,
-    this.starCount
+    this.starCount,
+    this.fontSize,
+    this.fontWeight
   }) : super(key: key);
 
   final String title;
   final int starCount;
+  final double fontSize;
+  final FontWeight fontWeight;
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +24,8 @@ class TitledStars extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-            fontSize: 30.0,
-            fontWeight: FontWeight.bold
+            fontSize: fontSize,
+            fontWeight: fontWeight
           ),
           textAlign: TextAlign.left,
         ),

@@ -41,6 +41,11 @@ class MyApp extends StatelessWidget {
                     ),
                     Review(
                       imgAvatar: "assets/img/ari.jpg",
+                      fullNameAvatar: "Ari Oronoz",
+                      cantReview: 1,
+                      cantPhotos: 64,
+                      likes: 4,
+                      comment: "this is amazing. I've never imagined that!!! ^^",
                     )
                   ]
               )
