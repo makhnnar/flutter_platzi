@@ -7,16 +7,23 @@ class StarsCounter extends StatelessWidget {
   StarsCounter({
     Key key,
     this.starCount,
-    this.maxStars = 5
+    this.maxStars = 5,
+    this.starSize = 20
   }) : super(key: key);
 
   final int starCount;
   final int maxStars;
+  final double starSize;
 
   List<Widget> starList() {
     List<Widget> list = new List();
     for (var i = 1; i <= maxStars; i++) {
-      list.add(LikeStar(isLike: i<=starCount));
+      list.add(
+        LikeStar(
+          isLike: i<=starCount,
+          size: starSize,
+        )
+      );
     }
     return list;
   }

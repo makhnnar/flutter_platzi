@@ -17,7 +17,6 @@ class CircleImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: 20.0,
         left: 20.0
       ),
       width: widthImage,

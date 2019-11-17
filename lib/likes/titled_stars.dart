@@ -9,12 +9,14 @@ class TitledStars extends StatelessWidget {
     this.title,
     this.starCount,
     this.fontSize,
-    this.fontWeight
+    this.fontWeight,
+    this.starsSize = 20
   }) : super(key: key);
 
   final String title;
   final int starCount;
   final double fontSize;
+  final double starsSize;
   final FontWeight fontWeight;
 
   @override
@@ -35,6 +37,7 @@ class TitledStars extends StatelessWidget {
           ),
           child: StarsCounter(
             starCount: starCount,
+            starSize: starsSize,
           ),
         )
       ],

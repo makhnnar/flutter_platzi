@@ -4,9 +4,9 @@ import 'CircleImage.dart';
 
 import 'review_text_content.dart';
 
-class Review extends StatelessWidget {
+class ReviewItem extends StatelessWidget {
 
-  Review({
+  ReviewItem({
     Key key,
     this.imgAvatar,
     this.fullNameAvatar,
@@ -26,7 +26,9 @@ class Review extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 90,
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           CircleImage(
             uriImage:imgAvatar,
@@ -39,7 +41,7 @@ class Review extends StatelessWidget {
             cantPhotos: cantPhotos,
             likes: likes,
             comment: comment,
-          )
+          ),
         ],
       ),
     );

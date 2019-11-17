@@ -27,6 +27,7 @@ class ReviewTextContent extends StatelessWidget {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
               fullNameAvatar,
@@ -41,6 +42,7 @@ class ReviewTextContent extends StatelessWidget {
             starCount: likes,
             fontSize: 10.0,
             fontWeight: FontWeight.normal,
+            starsSize: 15,
           ),
           Text(
               comment,
