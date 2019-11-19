@@ -72,3 +72,4 @@ flutter:
         - asset: fonts/Lato-Regular.ttf
   assets:
     - assets/img/ari.jpg
+    - assets/img/avatar.jpeg

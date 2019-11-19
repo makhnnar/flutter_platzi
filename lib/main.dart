@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/decorations/background_gradient.dart';
 import 'package:flutter_app/reviewItemList/review_item_data.dart';
 import 'package:flutter_app/reviewItemList/review_item_list.dart';
 
@@ -26,8 +27,8 @@ class MyApp extends StatelessWidget {
     );
     list.add(
         ReviewItemData(
-            imgAvatar: "assets/img/ari.jpg",
-            fullNameAvatar: "Ari Milano",
+            imgAvatar: "assets/img/avatar.jpeg",
+            fullNameAvatar: "Otro Usuario",
             cantReview: 3,
             cantPhotos: 1,
             likes: 3,
@@ -49,27 +50,27 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(
-              title: Text('Bombita')
-          ),
-          body: Center(
-              child: Column(
+          body: Stack(
+            children: <Widget>[
+              ListView(
                 children: <Widget>[
-                  PressedButton(
-                    onPressed: _saludar,
-                    title: "Presioname!",
-                  ),
                   DescriptionPlace(
                     namePlace: "Palanquero",
                     stars: 2,
                     description: dummyText,
                   ),
+                  PressedButton(
+                    onPressed: _saludar,
+                    title: "Presioname!",
+                  ),
                   ReviewItemList(
                     reviewItemList: getList(),
                   )
                 ]
-              )
-          ),
+              ),
+              BackgroundGradient(),
+            ],
+          )
         ),
     );
   }
