@@ -73,3 +73,6 @@ flutter:
   assets:
     - assets/img/ari.jpg
     - assets/img/avatar.jpeg
+    - assets/img/img1.png
+    - assets/img/img2.png
+    - assets/img/img3.png
