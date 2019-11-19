@@ -4,23 +4,36 @@ class CarouselItem extends StatelessWidget {
 
   CarouselItem({
     Key key,
+    this.srcImage
   }) : super(key: key);
+
+  final String srcImage;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.0,
+      height: 350.0,
+      width: 250.0,
+      margin: EdgeInsets.only(
+        top: 80.0,
+        left: 20.0
+      ),
       decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [
-                Color(0xFFab47bc),
-                Color(0xFF6a1b9a)
-              ],
-              begin: FractionalOffset(0.2, 0.0),
-              end: FractionalOffset(1.0, 0.6),
-              stops: [0.0,0.6],
-              tileMode: TileMode.clamp
+        image: DecorationImage(
+          fit:BoxFit.cover,
+          image: AssetImage(srcImage)
+        ),
+        borderRadius: BorderRadius.all(
+          Radius.circular(10.0)
+        ),
+        shape: BoxShape.rectangle,
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: Colors.black38,
+            blurRadius: 15.0,
+            offset: Offset(0.0, 7.0)
           )
+        ]
       ),
     );
   }
