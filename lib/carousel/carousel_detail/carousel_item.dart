@@ -12,7 +12,6 @@ class CarouselItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 350.0,
       width: 250.0,
       margin: EdgeInsets.only(
         top: 80.0,

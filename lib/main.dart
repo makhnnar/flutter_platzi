@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/decorations/background_gradient.dart';
+import 'package:flutter_app/carousel/carousel_header.dart';
 import 'package:flutter_app/reviewItemList/review_item_data.dart';
 import 'package:flutter_app/reviewItemList/review_item_list.dart';
 
@@ -38,6 +38,14 @@ class MyApp extends StatelessWidget {
     return list;
   }
 
+  List<String> getPlaces() {
+    List<String> list = List();
+    list.add("assets/img/img1.png");
+    list.add("assets/img/img2.png");
+    list.add("assets/img/img3.png");
+    return list;
+  }
+
   void _saludar() {
     print("hola");
   }
@@ -68,7 +76,9 @@ class MyApp extends StatelessWidget {
                   )
                 ]
               ),
-              BackgroundGradient(),
+              CarouselHeader(
+                placeList: getPlaces(),
+              ),
             ],
           )
         ),

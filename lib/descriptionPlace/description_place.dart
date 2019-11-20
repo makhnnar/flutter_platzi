@@ -21,7 +21,7 @@ class DescriptionPlace extends StatelessWidget {
         children:<Widget>[
           Container(
             margin: EdgeInsets.only(
-              top: 250.0,
+              top: 270.0,
               left: 20.0,
               right: 20.0
             ),
