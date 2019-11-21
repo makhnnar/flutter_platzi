@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/buttons/purple_button.dart';
 import 'package:flutter_app/carousel/carousel_header.dart';
 import 'package:flutter_app/reviewItemList/review_item_data.dart';
 import 'package:flutter_app/reviewItemList/review_item_list.dart';
 
-import 'PressedButton.dart';
+import 'package:flutter_app/buttons/PressedButton.dart';
 
 import 'package:flutter_app/descriptionPlace/description_place.dart';
 
@@ -67,8 +68,7 @@ class MyApp extends StatelessWidget {
                     stars: 2,
                     description: dummyText,
                   ),
-                  PressedButton(
-                    onPressed: _saludar,
+                  PurpleButton(
                     title: "Presioname!",
                   ),
                   ReviewItemList(
