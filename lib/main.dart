@@ -4,8 +4,6 @@ import 'package:flutter_app/carousel/carousel_header.dart';
 import 'package:flutter_app/reviewItemList/review_item_data.dart';
 import 'package:flutter_app/reviewItemList/review_item_list.dart';
 
-import 'package:flutter_app/buttons/PressedButton.dart';
-
 import 'package:flutter_app/descriptionPlace/description_place.dart';
 
 void main() => runApp(MyApp());
