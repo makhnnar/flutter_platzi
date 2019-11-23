@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/buttons/state_button.dart';
+import 'package:flutter_app/carousel/carousel_detail/carousel_image_item.dart';
 
 class CarouselItem extends StatelessWidget {
 
@@ -11,29 +13,19 @@ class CarouselItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 250.0,
-      margin: EdgeInsets.only(
-        top: 80.0,
-        left: 20.0
-      ),
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          fit:BoxFit.cover,
-          image: AssetImage(srcImage)
+    return Stack(
+      children: <Widget>[
+        CarouselImageItem(
+          srcImage: srcImage,
         ),
-        borderRadius: BorderRadius.all(
-          Radius.circular(10.0)
-        ),
-        shape: BoxShape.rectangle,
-        boxShadow: <BoxShadow>[
-          BoxShadow(
-            color: Colors.black38,
-            blurRadius: 15.0,
-            offset: Offset(0.0, 7.0)
-          )
-        ]
-      ),
+        Container(
+            margin: EdgeInsets.only(
+                top: 205.0,
+                left: 190.0
+            ),
+            child:StateButton()
+        )
+      ],
     );
   }
 

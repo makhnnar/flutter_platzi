@@ -25,12 +25,10 @@ class CarouselList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: ListView(
-        children: renderList(),
-        scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.all(10.0),
-      ),
+    return ListView(
+      children: renderList(),
+      scrollDirection: Axis.horizontal,
+      padding: EdgeInsets.all(10.0),
     );
   }
 

@@ -20,8 +20,11 @@ class CarouselHeader extends StatelessWidget {
           CarouselBackground(
             title: "Mi Playon",
           ),
-          CarouselList(
-            placeList: placeList,
+          Container(
+            height: 270.0,
+            child:CarouselList(
+              placeList: placeList,
+            )
           )
         ]
       ),
