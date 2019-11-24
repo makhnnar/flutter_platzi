@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/buttons/purple_button.dart';
 import 'package:flutter_app/carousel/carousel_header.dart';
+import 'package:flutter_app/home/home.dart';
 import 'package:flutter_app/reviewItemList/review_item_data.dart';
-import 'package:flutter_app/reviewItemList/review_item_list.dart';
-
-import 'package:flutter_app/descriptionPlace/description_place.dart';
 
 void main() => runApp(MyApp());
 
@@ -59,17 +56,11 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           body: Stack(
             children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  DescriptionPlace(
-                    namePlace: "Palanquero",
-                    stars: 2,
-                    description: dummyText,
-                  ),
-                  ReviewItemList(
-                    reviewItemList: getList(),
-                  )
-                ]
+              Home(
+                namePlace: "Palanquero",
+                stars: 2,
+                description: dummyText,
+                reviews: getList(),
               ),
               CarouselHeader(
                 placeList: getPlaces(),
