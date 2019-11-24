@@ -29,12 +29,6 @@ class _StateButton extends State<StateButton> {
       isFavorite= !isFavorite;
       favIcon = isFavorite?Icons.favorite:Icons.favorite_border;
     });
-
-    Scaffold.of(context).showSnackBar(
-        SnackBar(
-          content: Text("Agregaste a favoritos"),
-        )
-    );
   }
 
   @override

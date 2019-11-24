@@ -66,9 +66,6 @@ class MyApp extends StatelessWidget {
                     stars: 2,
                     description: dummyText,
                   ),
-                  PurpleButton(
-                    title: "Presioname!",
-                  ),
                   ReviewItemList(
                     reviewItemList: getList(),
                   )

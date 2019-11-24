@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/buttons/purple_button.dart';
+import 'package:flutter_app/descriptionPlace/paragraph.dart';
 
 import 'package:flutter_app/likes/titled_stars.dart';
 
@@ -18,6 +20,7 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children:<Widget>[
           Container(
             margin: EdgeInsets.only(
@@ -32,21 +35,13 @@ class DescriptionPlace extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(
-              top: 20.0,
-              left: 20.0,
-              right: 20.0
-            ),
-            child: Text(
-                description,
-                style: TextStyle(
-                  fontFamily: "Lato",
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF56575a)
-                ),
-            ),
+          Paragraph(
+              paragraph: description
+          ),
+          PurpleButton(
+            title: "Presioname!",
+            btnHeight: 60.0,
+            btnWidth: 160.0,
           )
         ]
     );

@@ -5,27 +5,31 @@ class PurpleButton extends StatelessWidget {
 
   PurpleButton({
     Key key,
-    this.title = "navigate"
+    this.title = "navigate",
+    this.btnHeight = 50.0,
+    this.btnWidth = 140.0
   }) : super(key: key);
 
   final String title;
+  final double btnHeight;
+  final double btnWidth;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       child: Container(
-        height: 60.0,
-        width: 100.0,
         margin: EdgeInsets.only(
           top: 30.0,
           left: 20.0,
           right: 20.0,
         ),
+        height: btnHeight,
+        width: btnWidth,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30.0),
           gradient: CustomLinearGradient(
-            colorLeft: 0xFF2196f3,
-            colorRight: 0xFF4527a0
+              colorLeft: 0xFF2196f3,
+              colorRight: 0xFF4527a0
           ).get(),
         ),
         child: Center(
