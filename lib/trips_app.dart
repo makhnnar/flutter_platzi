@@ -67,6 +67,7 @@ class _TripsApp extends State<TripsApp>{
           ),
           child: BottomNavigationBar(
             onTap: onTapTapped,
+            currentIndex: indexTap,
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
