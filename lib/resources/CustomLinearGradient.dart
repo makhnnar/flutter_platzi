@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CustomLinearGradient {
+class CustomGradients {
 
-  CustomLinearGradient({
-    this.colorLeft = 0xFF673ab7,
-    this.colorRight = 0xFF4527a0
-  });
+  CustomGradients();
 
-  final int colorLeft;
-  final int colorRight;
-
-  LinearGradient get() {
+  LinearGradient getHorizontalLinearGradient(int colorLeft,int colorRight) {
     return LinearGradient(
         colors: [
           Color(colorLeft),

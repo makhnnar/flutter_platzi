@@ -27,10 +27,7 @@ class PurpleButton extends StatelessWidget {
         width: btnWidth,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30.0),
-          gradient: CustomLinearGradient(
-              colorLeft: 0xFF2196f3,
-              colorRight: 0xFF4527a0
-          ).get(),
+          gradient: CustomGradients().getHorizontalLinearGradient(0xFF2196f3,0xFF4527a0),
         ),
         child: Center(
           child: Text(
