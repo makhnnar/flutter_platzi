@@ -12,7 +12,7 @@ class CarouselList extends StatelessWidget {
 
   List<Widget> renderList() {
     List<Widget> list = new List();
-    placeList.forEach(
+    placeList?.forEach(
             (item) =>
             list.add(
                 CarouselItem(
